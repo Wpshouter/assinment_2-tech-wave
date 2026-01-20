@@ -14,6 +14,13 @@ body {
   background: linear-gradient(48.06deg, #F7E93F 16.53%, #FB09B4 49.82%, #9100F8 81.65%);
   padding: 10px 20px;
   border-radius: 20px;
+  transition: transform 0.2s ease;
+
+  /* 3. Link the animation */
+}
+/* Optional: Slight pop on hover */
+.primary_btn:hover {
+  transform: scale(1.05);
 }
 .badgerer {
     top: 13px;
@@ -32,6 +39,9 @@ section.about_podcast p {
   h2{
     font-size: 32px;
   }
+  h1{
+    font-size: 40px;
+  }
   p{
     line-height: 23px;
   }
@@ -41,7 +51,7 @@ section.about_podcast p {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.authorsec{
+.authorsec, .footer_sec{
       padding-left: 20px;
     padding-right: 20px;
 }
@@ -53,8 +63,74 @@ section.pb-28.authorsec .flex.items-center.justify-center.gap-8 {
 section.fetured.py-32.px-48 .grid.grid-cols-3.gap-8.mt-10 {
     grid-template-columns: 100%;
 }
+.authorsec .min-w-\[200px\] {
+    max-width: 150px !important;
+    min-width: 150px !important;
+}
+.authorsec img.w-\[200px\].h-\[200px\] {
+    width: 150px;
+    height: 150px;
+}
+.flex_fcier{
+  justify-content: center;
+}
+.badgerer {
+    top: 0;
+    right: 0;
+}
+.flex.text-white.justify-between.items-center.py-\[30px\].px-\[200px\].border-b.border-\[\#412567\] img {
+    max-width: 140px;
+}
+.flex.text-white.justify-between.items-center.py-\[30px\].px-\[200px\].border-b.border-\[\#412567\] {
+    justify-content: flex-start ! IMPORTANT;
+    /* ALIGN-ITEMS: flex-start; */
+    padding: 20px;
+}
+section.text-center.banner_sec.bg-\[url\(\.\/assets\/hero-bg\.png\)\].py-\[100px\].bg-center-center {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position-x: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+}
+header nav, header a {
+    display: none;
+}
+.grid.justify-center.items-center.max-w-\[350px\].h-\[350px\].bg-\[url\(\.\/assets\/hero-circle\.png\)\].m-auto.round-\[50\%\].relative img {
+    max-width: 60px;
+    /* height: 80px; */
+    /* grid-template-columns: 100%; */
+    /* object-fit: fill; */
+    padding: 0;
+}
+.grid.justify-center.items-center.max-w-\[350px\].h-\[350px\].bg-\[url\(\.\/assets\/hero-circle\.png\)\].m-auto.round-\[50\%\].relative {
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+}
+    .footer_sec {
+        background-size: 135%;
+        background-repeat: no-repeat;
+        background-position: center !important;
+        background-color: #210e3e;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-position-y: 35px !important;
+    }
+.footer_sec img {
+    max-width: 220px;
+}
 section.pb-28.authorsec .flex.items-center.justify-center.gap-8 p {
     text-align: center;
+}
+.footer_sec .flex.gap-12.justify-center.items-center.mt-8.mb-8 {
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 h4{
   font-size: 20px;
@@ -69,15 +145,32 @@ section.about_podcast .flex.justify-between.items-center p.w-full.text-center.te
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.rounder_fixer {
-    border-radius: 24px !important;
-}
+    .rounder_fixer {
+        border-radius: 24px !important;
+        padding: 29px !important;
+    }
     section.about_podcast.w-full.bg-\[\#1A0B2E\].px-48.py-28 .flex.justify-between.items-center {
         flex-wrap: wrap;
         gap: 30px;
         justify-content: space-around;
     }
+    a.absolute.top-6.right-5{
+  opacity: 1 !important;
+}
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
 
+}
+a.absolute.top-6.right-5{
+  opacity: 0;
+}
+/* 4. Define the movement */
+@keyframes spring-tilt {
+  0% { transform: rotate(0deg); }
+  30% { transform: rotate(20deg); }  /* Swing right */
+  60% { transform: rotate(-5deg); } /* Slight recoil left */
+  100% { transform: rotate(0deg); }  /* Settle */
+}
+.imageani:hover {
+  animation: spring-tilt  0.4s ease-in-out;
 }
