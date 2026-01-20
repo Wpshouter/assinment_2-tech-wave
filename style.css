@@ -10,6 +10,9 @@ body {
 .box_shadow_1{
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+.banner_sec{
+  background-position: center;
+}
 .primary_btn{
   background: linear-gradient(48.06deg, #F7E93F 16.53%, #FB09B4 49.82%, #9100F8 81.65%);
   padding: 10px 20px;
