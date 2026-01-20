@@ -21,3 +21,63 @@ body {
     border-radius: 20px;
     box-shadow: 0px 3px 27px 0 rgba(0, 255, 136, 0.25);
 }
+section.about_podcast p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+@media screen and (max-width:576px){
+  h2{
+    font-size: 32px;
+  }
+  p{
+    line-height: 23px;
+  }
+  section.about_podcast,section.why_choose,.fetured {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.authorsec{
+      padding-left: 20px;
+    padding-right: 20px;
+}
+section.pb-28.authorsec .flex.items-center.justify-center.gap-8 {
+    flex-direction: column;
+     text-align: center;
+}
+
+section.fetured.py-32.px-48 .grid.grid-cols-3.gap-8.mt-10 {
+    grid-template-columns: 100%;
+}
+section.pb-28.authorsec .flex.items-center.justify-center.gap-8 p {
+    text-align: center;
+}
+h4{
+  font-size: 20px;
+}
+section.about_podcast p {
+    max-width: 100%;
+}
+section.about_podcast .flex.justify-between.items-center p.w-full.text-center.text-\[\#00FF88\].text-5xl.font-black.tracking-wider {
+    font-size: 40px;
+}
+.bg-\[rgba\(53\,17\,101\,0\.4\)\].text-white.px-10.py-28.rounded-\[40px\].items-center.justify-start.min-h-\[200px\].box_shadow_1{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.rounder_fixer {
+    border-radius: 24px !important;
+}
+    section.about_podcast.w-full.bg-\[\#1A0B2E\].px-48.py-28 .flex.justify-between.items-center {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+}
